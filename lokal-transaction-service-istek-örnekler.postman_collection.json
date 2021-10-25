@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "6d6a3f91-d309-4462-8b23-39f9cd97291a",
+		"name": "lokal-transaction-service-istek-örnekler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:4444/api/transaction",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "randomSecureKeyPassword!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "randomSecureKeyUsername!",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":1,\r\n    \"productId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4444/api/transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"api",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4444/api/transaction Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "randomSecureKeyPassword!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "randomSecureKeyUsername!",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4444/api/transaction/1",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"api",
+						"transaction",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
