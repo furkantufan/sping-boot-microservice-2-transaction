@@ -1,4 +1,6 @@
 ## Spring Boot Microservice 2 - Transaction Service
+* h2 db kullanılmıştır.
+* Uygulama ayağa kaldırıldıktan sonra .json dosyasından postman ile test edilebilir. Örnek istekler için;
 
 ### Endpoints
 
